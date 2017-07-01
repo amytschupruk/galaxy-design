@@ -1,0 +1,36 @@
+
+.services {
+	padding: 100px 0px;
+	.services-text-container {
+		margin-bottom: 20px;
+		padding-top: 20px;
+		text-align: center;
+		h2:before {
+			content: "Services";
+		}	
+	}
+	.services-container {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+		margin-top: 60px;
+		i {
+			color: $primaryColour;
+			font-size: 90px;
+		}
+		h3 {
+			color: $secondaryColour;
+			text-align: center;
+			margin-top: 20px;
+			letter-spacing: 2px;
+		}
+		.services-cell {
+			width: calc(25% - 20px);
+			padding: 35px 20px;
+			margin: 10px;
+			box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+			text-align: center;
+		}
+
+	}
+}

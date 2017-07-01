@@ -1,0 +1,35 @@
+.portfolio {
+	padding: 100px 0px;
+	background-color: $fourthColour;
+	.portfolio-text-container {
+		position: relative;
+		margin-bottom: 50px;
+		padding-top: 20px;
+		text-align: center;
+		h2:before {
+			content: "Projects";
+		}	
+	}
+	.portfolio--gallery__nav {
+		text-align: center;
+		margin-bottom: 40px;
+		button {
+			width: 135px;
+			margin: 0px 10px;
+			background: $primaryColour;
+		}
+	}
+	.grid-sizer {
+		width: 25%;
+	}
+	.portfolio--gallery__cell {
+		width: calc(25% - 10px);
+		float: left;
+		display: inline-block;
+		padding: 5px;
+		img {
+			max-width: 100%;
+		}
+	}
+	
+}

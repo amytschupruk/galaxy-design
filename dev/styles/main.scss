@@ -1,6 +1,7 @@
-@import 'setup';
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/general';
+@import 'partials/home';
+@import 'partials/services';
+@import 'partials/portfolio';
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
-}

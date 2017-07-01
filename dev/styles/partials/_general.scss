@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	color: white;
+	font-family: $primaryFont;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 80%;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 50px;
+	letter-spacing: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+h2 {
+	font-family: $primaryFont;
+	font-size: 35px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	line-height: 23px;
+	color: $secondaryColour;
+	text-align: center;
+	// border-bottom: 5px solid $primaryColour;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+h2:before {
+	position: absolute;
+	display: block;
+	font-size: 130px;
+	color: $tertiaryColour;
+	font-weight: 700;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+	z-index: -1;
+}
+
+h2:after {
+	position: absolute;
+	content: '';
+	height: 5px;
+	width: 150px;
+	background-color: $primaryColour;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 24px;
+	z-index: -1;
+
+}
+
+
+h3 {
+	font-family: $secondaryFont;
+	letter-spacing: 5px;
+}	
+
+ button {
+ 	padding: 15px 30px;
+ 	// border: 3px solid white;
+ 	color: white;
+ 	text-transform: uppercase;
+ 	letter-spacing: 5px;
+ 	background-color: transparent;
+ 	font-family: $secondaryFont;
+ 	transition: 0.3s all ease;
+ 	border: none;
+ }
+
+ // *** HOVER CSS ANIMATION ***
+  // * Hover.css (http://ianlunn.github.io/Hover/)
+  // * Version: 2.2.0
+  // * Author: Ian Lunn @IanLunn
+  // * Author URL: http://ianlunn.co.uk/
+  // * Github: https://github.com/IanLunn/Hover
+  // * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+  // */
+ /* 2D TRANSITIONS */
+ /* Grow */
+ .hvr-grow {
+   display: inline-block;
+   vertical-align: middle;
+   -webkit-transform: perspective(1px) translateZ(0);
+   transform: perspective(1px) translateZ(0);
+   box-shadow: 0 0 1px transparent;
+   -webkit-transition-duration: 0.4s;
+   transition-duration: 0.4s;
+   -webkit-transition-property: transform;
+   transition-property: transform;
+ }
+ .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+
