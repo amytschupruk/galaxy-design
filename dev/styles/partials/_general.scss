@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	width: 100%;
 	color: white;
 	font-family: $primaryFont;
 }
@@ -65,6 +66,7 @@ h4 {
 }
 p {
 	font-family: $primaryFont;
+	letter-spacing: 1px;
 }
 
  button {
@@ -79,12 +81,6 @@ p {
  	border: none;
  }
 
-.sticky-top {
-	position: fixed;
-	top: 0;
-	z-index: 999;
-	background: $secondaryColour;
-}
 
  // *** HOVER CSS ANIMATION ***
   // * Hover.css (http://ianlunn.github.io/Hover/)
