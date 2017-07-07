@@ -1,3 +1,4 @@
+
 // Isotope grid
 var $grid = $('.portfolio--gallery__container').isotope({
   // customized options...
@@ -44,6 +45,14 @@ $('.main-carousel').flickity({
   // options
   cellAlign: 'left',
   contain: true
+});
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 550) {
+      $('nav').addClass('sticky-top');
+    } else {
+      $('nav').removeClass('sticky-top');
+    }
 });
 
 

@@ -46,3 +46,11 @@ $('.main-carousel').flickity({
   cellAlign: 'left',
   contain: true
 });
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 550) {
+    $('nav').addClass('sticky-top');
+  } else {
+    $('nav').removeClass('sticky-top');
+  }
+});

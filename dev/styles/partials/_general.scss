@@ -79,6 +79,13 @@ p {
  	border: none;
  }
 
+.sticky-top {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background: $secondaryColour;
+}
+
  // *** HOVER CSS ANIMATION ***
   // * Hover.css (http://ianlunn.github.io/Hover/)
   // * Version: 2.2.0
