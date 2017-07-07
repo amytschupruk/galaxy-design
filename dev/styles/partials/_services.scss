@@ -7,6 +7,9 @@
 		text-align: center;
 		h2:before {
 			content: "Services";
+		}
+		h2:after {
+			width: 140px;
 		}	
 	}
 	.services-container {

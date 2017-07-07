@@ -18,15 +18,13 @@ h1 {
 }
 
 h2 {
-	font-family: $primaryFont;
+	font-family: $secondaryFont;
 	font-size: 35px;
 	letter-spacing: 1px;
 	font-weight: 500;
 	line-height: 23px;
 	color: $secondaryColour;
 	text-align: center;
-	// border-bottom: 5px solid $primaryColour;
-	display: inline-block;
 	position: relative;
 	z-index: 1;
 	box-sizing: border-box;
@@ -58,9 +56,16 @@ h2:after {
 
 
 h3 {
-	font-family: $secondaryFont;
+	font-family: $primaryFont;
 	letter-spacing: 5px;
 }	
+
+h4 {
+	font-family: $primaryFont;
+}
+p {
+	font-family: $primaryFont;
+}
 
  button {
  	padding: 15px 30px;

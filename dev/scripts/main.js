@@ -18,6 +18,15 @@ $grid.imagesLoaded().progress( function() {
 	});
 });
 
+$("a.single_image").fancybox({
+});
+
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
 
 
 

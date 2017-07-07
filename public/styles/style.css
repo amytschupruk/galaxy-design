@@ -134,7 +134,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   margin: 0;
   color: white;
-  font-family: "Monserrat", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 .wrapper {
   margin: 0 auto;
@@ -155,7 +155,6 @@ h2 {
   line-height: 23px;
   color: #222;
   text-align: center;
-  display: inline-block;
   position: relative;
   z-index: 1;
   -webkit-box-sizing: border-box;
@@ -188,13 +187,19 @@ h3 {
   font-family: "Lato", sans-serif;
   letter-spacing: 5px; }
 
+h4 {
+  font-family: "Lato", sans-serif; }
+
+p {
+  font-family: "Lato", sans-serif; }
+
 button {
   padding: 15px 30px;
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
   background-color: transparent;
-  font-family: "Lato", sans-serif;
+  font-family: "Monserrat", sans-serif;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   border: none; }
@@ -248,7 +253,7 @@ button {
         text-transform: uppercase;
         font-size: 16px;
         letter-spacing: 5px;
-        font-family: "Monserrat", sans-serif; }
+        font-family: "Lato", sans-serif; }
       .home nav ul a {
         color: white;
         border-bottom: 5px solid transparent; }
@@ -307,6 +312,8 @@ button {
     text-align: center; }
     .services .services-text-container h2:before {
       content: "Services"; }
+    .services .services-text-container h2:after {
+      width: 140px; }
   .services .services-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -336,11 +343,13 @@ button {
   background-color: #f9f9fb; }
   .portfolio .portfolio-text-container {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     padding-top: 20px;
     text-align: center; }
     .portfolio .portfolio-text-container h2:before {
       content: "Projects"; }
+    .portfolio .portfolio-text-container h2:after {
+      width: 135px; }
   .portfolio .portfolio--gallery__nav {
     text-align: center;
     margin-bottom: 40px; }
@@ -357,3 +366,103 @@ button {
     padding: 5px; }
     .portfolio .portfolio--gallery__cell img {
       max-width: 100%; }
+
+.clients {
+  padding: 100px 0px;
+  background: white; }
+  .clients .clients-text-container {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-align: center; }
+    .clients .clients-text-container h2:before {
+      content: "Clients"; }
+    .clients .clients-text-container h2:after {
+      width: 112px; }
+
+.carousel-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 2.5%;
+  margin-bottom: 50px; }
+
+.carousel-cell__img {
+  width: 60%;
+  padding: 2.5% 0% 2.5% 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block; }
+  .carousel-cell__img img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+.carousel-cell__text {
+  width: 40%;
+  padding: 2.5% 5% 2.5% 2.5%;
+  color: #222;
+  display: inline-block;
+  text-align: right; }
+  .carousel-cell__text h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 0px; }
+  .carousel-cell__text p {
+    margin-bottom: 30px;
+    line-height: 20px; }
+  .carousel-cell__text button {
+    background: #499dde; }
+
+.about {
+  padding: 100px 0px 200px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3))), url(../../../public/assets/toronto.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3)), url(../../../public/assets/toronto.jpg);
+  background-size: cover; }
+  .about .about-text-container {
+    margin-bottom: 100px;
+    padding-top: 20px;
+    text-align: center; }
+    .about .about-text-container h2:before {
+      content: "About"; }
+    .about .about-text-container h2:after {
+      width: 98px; }
+
+.about-description-container {
+  padding: 0% 25%; }
+  .about-description-container p {
+    color: #222;
+    line-height: 25px;
+    text-align: center; }
+  .about-description-container a {
+    line-height: 20px;
+    color: #222;
+    text-decoration: none; }
+  .about-description-container a:hover {
+    border-bottom: 5px solid #499dde; }
+
+.contact {
+  padding: 100px 0px;
+  background: #222; }
+  .contact .contact-text-container {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-align: center; }
+    .contact .contact-text-container h2 {
+      color: white; }
+    .contact .contact-text-container h2:before {
+      content: "Contact";
+      color: #2a2a2a; }
+    .contact .contact-text-container h2:after {
+      width: 129px; }
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center; }
+  footer p {
+    padding: 20px;
+    margin: 0px; }

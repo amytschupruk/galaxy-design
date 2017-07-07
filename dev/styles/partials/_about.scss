@@ -1,0 +1,33 @@
+.about {
+	padding: 100px 0px 200px 0px;
+	background: linear-gradient(rgba(255,255,255, 0.8),rgba(255, 255, 255, 0.3)), url(../../../public/assets/toronto.jpg);
+	background-size: cover;
+	.about-text-container {
+		margin-bottom: 100px;
+		padding-top: 20px;
+		text-align: center;
+		h2:before {
+			content: "About";
+		}
+		h2:after {
+			width: 98px;
+		}	
+	}
+}
+
+.about-description-container {
+	padding: 0% 25%;
+	p {
+		color: $secondaryColour;
+		line-height: 25px;
+		text-align: center;
+	}
+	a {
+		line-height: 20px;
+		color: $secondaryColour;
+		text-decoration: none;
+	}
+	a:hover {
+		border-bottom: 5px solid $primaryColour;
+	}
+}

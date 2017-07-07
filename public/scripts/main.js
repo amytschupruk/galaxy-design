@@ -19,3 +19,11 @@ $grid.imagesLoaded().progress(function () {
     $grid.isotope({ filter: filterValue });
   });
 });
+
+$("a.single_image").fancybox({});
+
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});

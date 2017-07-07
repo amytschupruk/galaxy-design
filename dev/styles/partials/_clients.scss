@@ -1,0 +1,62 @@
+.clients {
+	padding: 100px 0px;
+	background: white;
+	.clients-text-container {
+		margin-bottom: 20px;
+		padding-top: 20px;
+		text-align: center;
+		h2:before {
+			content: "Clients";
+		}
+		h2:after {
+			width: 112px;
+		}	
+	}
+}
+
+
+
+.carousel-cell {
+	display: flex;
+	width: 100%;
+	padding: 2.5%;
+	margin-bottom: 50px;
+}
+
+.carousel-cell__img {
+	width: 60%;
+	padding: 2.5% 0% 2.5% 5%;
+	// display: flex;
+	align-items: center;
+	display: inline-block;
+	img {
+		width: 100%;
+		 position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+	}
+
+}	
+
+.carousel-cell__text {
+	width: 40%;
+	padding: 2.5% 5% 2.5% 2.5%;
+	color: $secondaryColour;
+	display: inline-block;
+	text-align: right;
+	h4 {
+		font-size: 20px;
+		letter-spacing: 3px;
+		margin-bottom: 0px;
+	}
+	p {
+		margin-bottom: 30px;
+		line-height: 20px;
+	}
+	button {
+		background: $primaryColour;
+	}
+}
+
+
+

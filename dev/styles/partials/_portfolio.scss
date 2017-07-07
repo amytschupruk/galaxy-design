@@ -3,11 +3,14 @@
 	background-color: $fourthColour;
 	.portfolio-text-container {
 		position: relative;
-		margin-bottom: 50px;
+		margin-bottom: 70px;
 		padding-top: 20px;
 		text-align: center;
 		h2:before {
 			content: "Projects";
+		}
+		h2:after {
+			width: 135px;
 		}	
 	}
 	.portfolio--gallery__nav {
