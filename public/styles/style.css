@@ -206,6 +206,9 @@ button {
   transition: 0.3s all ease;
   border: none; }
 
+.active-button {
+  background-color: black; }
+
 /* 2D TRANSITIONS */
 /* Grow */
 .hvr-grow {
@@ -226,6 +229,19 @@ button {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  h2:before {
+    font-size: 90px; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h2:before {
+    font-size: 65px; }
+  .wrapper {
+    max-width: 90%; } }
 
 .home {
   height: 100vh;
@@ -315,6 +331,24 @@ button {
   width: 100%;
   padding-bottom: 20px; }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  nav#nav {
+    display: none; }
+  .home-body .home-text-container h1 {
+    font-size: 30px;
+    line-height: 35px; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .home-body .logo {
+    max-width: 50%;
+    margin-top: 35%;
+    margin-bottom: 20px; }
+  .home-body .home-text-container h1 span {
+    font-size: 18px; } }
+
 .services {
   padding: 100px 0px; }
   .services .services-text-container {
@@ -349,6 +383,41 @@ button {
               box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
       text-align: center; }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .services .services-container .services-cell {
+    width: calc(50% - 20px);
+    padding: 20px 20px; } }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .services {
+    padding: 35px 0px; }
+    .services .services-container {
+      margin-top: 0px; }
+      .services .services-container i {
+        font-size: 40px; }
+      .services .services-container h3 {
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0px;
+        margin-left: 25px; }
+      .services .services-container .services-cell {
+        width: 100%;
+        padding: 15px 15px;
+        margin: 0px;
+        -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+
 .portfolio {
   padding: 100px 0px;
   background-color: #f9f9fb; }
@@ -372,11 +441,36 @@ button {
     width: 25%; }
   .portfolio .portfolio--gallery__cell {
     width: calc(25% - 10px);
-    float: left;
     display: inline-block;
     padding: 5px; }
     .portfolio .portfolio--gallery__cell img {
       max-width: 100%; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .portfolio .grid-sizer {
+    width: 33.3%; }
+  .portfolio .portfolio--gallery__cell {
+    width: calc(33.3% - 10px);
+    padding: 2.5px; } }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 35px 0px; }
+    .portfolio .portfolio-text-container {
+      margin-bottom: 20px; }
+    .portfolio .portfolio--gallery__nav {
+      margin-bottom: 20px; }
+      .portfolio .portfolio--gallery__nav button {
+        width: 80%;
+        margin: 5px;
+        font-size: 14px; }
+    .portfolio .grid-sizer {
+      width: 50%; }
+    .portfolio .portfolio--gallery__cell {
+      width: calc(50% - 10px); } }
 
 .clients {
   padding: 100px 0px;
@@ -394,9 +488,10 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
-  padding: 2.5%;
-  margin-bottom: 30px; }
+  padding: 2.5%; }
 
 .carousel-cell__img {
   width: 60%;
@@ -428,14 +523,32 @@ button {
   .carousel-cell__text button {
     background: #499dde; }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .carousel-cell__img {
+    width: 100%;
+    padding: 0%; }
+  .carousel-cell__text {
+    width: 100%;
+    text-align: center; }
+    .carousel-cell__text h4 {
+      margin-top: 10px;
+      letter-spacing: 1px; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .clients {
+    padding: 35px 0px;
+    margin-bottom: 35px; } }
+
 .about {
-  padding: 100px 0px 200px 0px;
+  padding: 120px 0px 150px 0px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3))), url(../assets/toronto.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3)), url(../assets/toronto.jpg);
   background-size: cover; }
   .about .about-text-container {
     margin-bottom: 100px;
-    padding-top: 20px;
     text-align: center; }
     .about .about-text-container h2:before {
       content: "About"; }
@@ -447,13 +560,39 @@ button {
   .about-description-container p {
     color: #222;
     line-height: 25px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 20px; }
   .about-description-container a {
     line-height: 20px;
     color: #222;
     text-decoration: none; }
   .about-description-container a:hover {
     border-bottom: 5px solid #499dde; }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .about {
+    padding: 120px 0px 125px 0px; }
+    .about .about-text-container {
+      margin-bottom: 20px; }
+  .about-description-container {
+    padding: 0 15%; } }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .about {
+    padding: 120px 0px 100px 0px; }
+  .about-description-container p {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .about {
+    padding: 35px 0px; }
+  .about-description-container {
+    margin-top: 0px;
+    padding: 0%; } }
 
 .contact {
   padding: 100px 0px;
@@ -525,6 +664,46 @@ button {
     transition: 0.3s all ease; }
   .socials a:hover {
     color: #499dde; }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .contact {
+    padding: 35px 0px 20px 0px; }
+    .contact .contact-text-container {
+      margin-bottom: 35px; }
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .contact-container .contact-container__text {
+      width: 100%;
+      text-align: center; }
+      .contact-container .contact-container__text h4 {
+        margin-bottom: 20px; }
+    .contact-container .contact-container__info {
+      width: 100%; }
+  .socials {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .socials p {
+      margin: 0px; } }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .contact .contact-text-container {
+    margin-bottom: 20px; }
+  .phone i {
+    margin-right: 15px; }
+  .email i {
+    margin-right: 15px; } }
 
 footer {
   background: #222;

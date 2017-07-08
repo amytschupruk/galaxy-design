@@ -76,6 +76,36 @@
 		padding-bottom: 20px;
 	}
 
+	/* Portrait tablet and small desktops */
+	@media (max-width: 940px) {
+	}
 
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		nav#nav {
+			display: none;
+		}
+		.home-body .home-text-container h1 {
+			font-size: 30px;
+			line-height: 35px;
+		}
+	}
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+		.home-body {
+		.logo {
+			max-width: 50%;
+			margin-top: 35%;
+			margin-bottom: 20px;
+		}
+		.home-text-container h1 {
+			span {
+				font-size: 18px;
+			}
+		}
+
+	}
+}
 
 

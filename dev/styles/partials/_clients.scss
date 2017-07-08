@@ -18,9 +18,9 @@
 
 .carousel-cell {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	padding: 2.5%;
-	margin-bottom: 30px;
 }
 
 .carousel-cell__img {
@@ -59,4 +59,30 @@
 }
 
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.carousel-cell__img {
+		width: 100%;
+		padding: 0%;
+	}	
+	.carousel-cell__text {
+		width: 100%;
+		text-align: center;
+		h4 {
+			margin-top: 10px;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.clients {
+		padding: 35px 0px;
+		margin-bottom: 35px;
+	}
+}

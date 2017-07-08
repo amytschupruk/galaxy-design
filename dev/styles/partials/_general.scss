@@ -81,6 +81,9 @@ p {
  	border: none;
  }
 
+ .active-button {
+ 	background-color: black;
+ }
 
  // *** HOVER CSS ANIMATION ***
   // * Hover.css (http://ianlunn.github.io/Hover/)
@@ -108,3 +111,24 @@ p {
    transform: scale(1.1);
  }
 
+ /* Portrait tablet and small desktops */
+ @media (max-width: 940px) {
+
+ }
+
+ /* Landscape phone to portrait tablet */
+ @media (max-width: 768px) {
+ 	h2:before {
+ 		font-size: 90px;
+ 	}
+ }
+
+ /* Landscape phones and down */
+ @media (max-width: 480px) {
+ 	h2:before {
+ 		font-size: 65px;
+ 	}
+ 	.wrapper {
+ 		max-width: 90%;
+ 	}
+ }

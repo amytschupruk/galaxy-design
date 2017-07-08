@@ -1,10 +1,9 @@
 .about {
-	padding: 100px 0px 200px 0px;
+	padding: 120px 0px 150px 0px;
 	background: linear-gradient(rgba(255,255,255, 0.8),rgba(255, 255, 255, 0.3)), url(../assets/toronto.jpg);
 	background-size: cover;
 	.about-text-container {
 		margin-bottom: 100px;
-		padding-top: 20px;
 		text-align: center;
 		h2:before {
 			content: "About";
@@ -21,6 +20,7 @@
 		color: $secondaryColour;
 		line-height: 25px;
 		text-align: center;
+		margin-top: 20px;
 	}
 	a {
 		line-height: 20px;
@@ -29,5 +29,40 @@
 	}
 	a:hover {
 		border-bottom: 5px solid $primaryColour;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.about {
+		padding: 120px 0px 125px 0px;
+		.about-text-container {
+			margin-bottom: 20px;
+		}
+	}
+	.about-description-container {
+		padding: 0 15%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.about {
+		padding: 120px 0px 100px 0px;
+	}
+	.about-description-container p {
+		background-color: rgba(255, 255, 255, 0.5);
+		padding: 10px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.about {
+		padding: 35px 0px;
+	}
+	.about-description-container {
+		margin-top: 0px;
+		padding: 0%;
 	}
 }

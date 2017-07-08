@@ -74,6 +74,61 @@
 	}
 }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.contact {
+		padding: 35px 0px 20px 0px;
+		.contact-text-container {
+			margin-bottom: 35px;
+		}
+	}
+	.contact-container {
+		flex-direction: column;
+		.contact-container__text {
+			width: 100%;
+			text-align: center;
+			h4 {
+				margin-bottom: 20px;
+			}
+		}
+		.contact-container__info {
+			width: 100%;
+		}
+	}
+	.socials {
+		margin-top: 40px;
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		p {
+			margin: 0px;
+		}
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.contact {
+		.contact-text-container {
+			margin-bottom: 20px;
+		}
+	}
+	.phone {
+		i {
+			margin-right: 15px;
+		}	
+	}
+	.email {
+		i {
+			margin-right: 15px;
+		}
+	}
+}
+
 
 
 
