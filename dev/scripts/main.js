@@ -40,7 +40,7 @@ $(document).ready(function(){
       });
     });
     //default isotope filter to be on "ads"
-    $('.portfolio--gallery__container').isotope({ filter: '.ad' });
+    // $('.portfolio--gallery__container').isotope({ filter: '.ad' });
 
     //Fancybox plugin to view individual images
     $("a.single_image").fancybox({
