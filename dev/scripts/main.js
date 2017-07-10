@@ -1,5 +1,15 @@
 $(document).ready(function(){
-    // Isotope grid
+  //hamburger menu
+    $('#nav-icon').click(function(){
+      $(this).toggleClass('open');
+      $('.hamburger-menu').toggleClass('show');
+
+    });
+    $('.hamburger-menu a').click(function(){
+      $('#nav-icon').removeClass('open');
+      $('.hamburger-menu').removeClass('show');
+    })
+    // Isotope grid masonry isotope plugin
     var $grid = $('.portfolio--gallery__container').isotope({
       // customized options...
       itemSelector: '.portfolio--gallery__cell',
@@ -39,8 +49,8 @@ $(document).ready(function(){
     	  $grid.isotope({ filter: filterValue });
       });
     });
-    //default isotope filter to be on "ads"
-    // $('.portfolio--gallery__container').isotope({ filter: '.ad' });
+    //default isotope filter to be on "logos"
+    $('.portfolio--gallery__container').isotope({ filter: '.logo' });
 
     //Fancybox plugin to view individual images
     $("a.single_image").fancybox({
@@ -57,8 +67,12 @@ $(document).ready(function(){
     $(window).scroll(function () {
         if ($(this).scrollTop() > 550) {
           $('nav').addClass('sticky-top');
+          //hamburger menu positioning
+          $('nav').css('position', 'fixed');
         } else {
           $('nav').removeClass('sticky-top');
+          //hamburger menu positioning
+          $('nav').css('position', 'relative');
         }
     });
 });
