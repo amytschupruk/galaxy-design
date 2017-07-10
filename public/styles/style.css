@@ -254,6 +254,7 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(../assets/space.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../assets/space.jpg);
   background-size: cover;
+  background-attachment: fixed;
   position: realtive; }
   .home nav {
     display: -webkit-box;
