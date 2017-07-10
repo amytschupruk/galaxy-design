@@ -402,11 +402,7 @@ button {
   margin: 0px; }
   .hamburger-menu li {
     background: rgba(0, 0, 0, 0.9);
-    padding-bottom: 20px; }
-  .hamburger-menu .first-menu-item {
-    padding-top: 20px; }
-  .hamburger-menu .last-menu-item {
-    padding-bottom: 30px; }
+    padding: 10px; }
   .hamburger-menu a {
     color: white;
     text-decoration: none;
@@ -630,7 +626,9 @@ button {
     text-align: center; }
     .carousel-cell__text h4 {
       margin-top: 10px;
-      letter-spacing: 1px; } }
+      letter-spacing: 1px; }
+  .flickity-viewport {
+    min-height: 400px; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
