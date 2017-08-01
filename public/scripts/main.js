@@ -10,6 +10,7 @@ $(document).ready(function () {
     $('#nav-icon').removeClass('open');
     $('.hamburger-menu').removeClass('show');
   });
+
   // Isotope grid masonry isotope plugin
   var $grid = $('.portfolio--gallery__container').isotope({
     // customized options...

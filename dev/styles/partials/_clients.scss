@@ -27,14 +27,12 @@
 .carousel-cell__img {
 	width: 60%;
 	padding: 2.5% 0% 2.5% 5%;
-	// display: flex;
 	align-items: center;
-	display: inline-block;
+	// display: inline-block;
+	display: flex;
+	justify-content: center;
 	img {
-		width: 100%;
-		 position: relative;
-  		top: 50%;
-  		transform: translateY(-50%);
+		align-self: center;
 	}
 
 }	
@@ -57,6 +55,10 @@
 	button {
 		background: $primaryColour;
 	}
+}
+
+.yh-photo {
+	max-width: 275px;
 }
 
 

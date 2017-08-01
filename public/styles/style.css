@@ -592,13 +592,15 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: inline-block; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .carousel-cell__img img {
-    width: 100%;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    -ms-flex-item-align: center;
+        align-self: center; }
 
 .carousel-cell__text {
   width: 40%;
@@ -615,6 +617,9 @@ button {
     line-height: 20px; }
   .carousel-cell__text button {
     background: #499dde; }
+
+.yh-photo {
+  max-width: 275px; }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
@@ -758,9 +763,12 @@ button {
     color: white;
     margin-right: 30px;
     -webkit-transition: 0.3s all ease;
-    transition: 0.3s all ease; }
+    transition: 0.3s all ease;
+    padding: 20px; }
   .socials a:hover {
     color: #499dde; }
+  .socials a:first-child {
+    padding-left: 0px; }
 
 .contact-img-1 {
   max-width: 50%; }

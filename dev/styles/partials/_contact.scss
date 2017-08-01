@@ -62,15 +62,20 @@
 	display: flex;
 	position: absolute;
 	bottom: 0;
+
 	a {
 		font-size: 30px;
 		text-decoration: none;
 		color: white;
 		margin-right: 30px;
 		transition: 0.3s all ease;
+		padding: 20px;
 	}
 	a:hover {
 		color: $primaryColour;
+	}
+	a:first-child {
+		padding-left: 0px;
 	}
 }
 
@@ -97,7 +102,7 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-	
+
 	.contact {
 		padding: 35px 0px 20px 0px;
 		.contact-text-container {
