@@ -74,12 +74,30 @@
 	}
 }
 
+.contact-img-1 {
+	max-width: 50%;
+}
+
+.contact-img-2 {
+	max-width: 25%;
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+
+	.contact-img-1 {
+		max-width: 75%;
+	}
+
+	.contact-img-2 {
+		max-width: 50%;
+	}
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+	
 	.contact {
 		padding: 35px 0px 20px 0px;
 		.contact-text-container {
