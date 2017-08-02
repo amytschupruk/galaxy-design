@@ -1,15 +1,16 @@
 .about {
 	padding: 120px 0px 150px 0px;
-	background: linear-gradient(rgba(255,255,255, 0.8),rgba(255, 255, 255, 0.3)), url(../assets/toronto.jpg);
+	background: linear-gradient(rgba(255,255,255, 0.8),rgba(255, 255, 255, 0.3)), url(../assets/toronto_photo.png);
 	background-size: cover;
 	.about-text-container {
 		margin-bottom: 100px;
 		text-align: center;
 		h2:before {
 			content: "About";
+			color: white;
 		}
 		h2:after {
-			width: 98px;
+			width: 115px;
 		}	
 	}
 }
@@ -21,6 +22,8 @@
 		line-height: 25px;
 		text-align: center;
 		margin-top: 20px;
+		background: rgba(255,255,255,0.5);
+		padding: 20px;
 	}
 	a {
 		line-height: 20px;

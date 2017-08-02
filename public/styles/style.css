@@ -149,7 +149,7 @@ h1 {
   text-align: center; }
 
 h2 {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 35px;
   letter-spacing: 1px;
   font-weight: 500;
@@ -201,7 +201,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 5px;
   background-color: transparent;
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
   border: none; }
@@ -450,7 +450,7 @@ button {
     .services .services-text-container h2:before {
       content: "Services"; }
     .services .services-text-container h2:after {
-      width: 140px; }
+      width: 145px; }
   .services .services-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -521,7 +521,7 @@ button {
     .portfolio .portfolio-text-container h2:before {
       content: "Projects"; }
     .portfolio .portfolio-text-container h2:after {
-      width: 135px; }
+      width: 142px; }
   .portfolio .portfolio--gallery__nav {
     text-align: center;
     margin-bottom: 40px; }
@@ -574,7 +574,7 @@ button {
     .clients .clients-text-container h2:before {
       content: "Clients"; }
     .clients .clients-text-container h2:after {
-      width: 112px; }
+      width: 125px; }
 
 .carousel-cell {
   display: -webkit-box;
@@ -589,18 +589,20 @@ button {
 .carousel-cell__img {
   width: 60%;
   padding: 2.5% 0% 2.5% 5%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: inline-block;
+  text-align: center; }
   .carousel-cell__img img {
-    -ms-flex-item-align: center;
-        align-self: center; }
+    width: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+.yh-photo {
+  max-width: 275px;
+  margin: auto 0; }
 
 .carousel-cell__text {
   width: 40%;
@@ -644,16 +646,17 @@ button {
 
 .about {
   padding: 120px 0px 150px 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3))), url(../assets/toronto.jpg);
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3)), url(../assets/toronto.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3))), url(../assets/toronto_photo.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3)), url(../assets/toronto_photo.png);
   background-size: cover; }
   .about .about-text-container {
     margin-bottom: 100px;
     text-align: center; }
     .about .about-text-container h2:before {
-      content: "About"; }
+      content: "About";
+      color: white; }
     .about .about-text-container h2:after {
-      width: 98px; }
+      width: 115px; }
 
 .about-description-container {
   padding: 0% 25%; }
@@ -661,7 +664,9 @@ button {
     color: #222;
     line-height: 25px;
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px; }
   .about-description-container a {
     line-height: 20px;
     color: #222;
@@ -709,7 +714,7 @@ button {
       content: "Contact";
       color: #2a2a2a; }
     .contact .contact-text-container h2:after {
-      width: 129px; }
+      width: 140px; }
 
 .contact-container {
   display: -webkit-box;
@@ -810,8 +815,10 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .socials p {
-      margin: 0px; } }
+    .socials a {
+      margin: 0; }
+    .socials a:last-child {
+      padding-right: 0px; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -829,4 +836,11 @@ footer {
   footer p {
     padding: 20px;
     margin: 0px;
-    font-size: 14px; }
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-top: 10px; }
+  footer p:first-child {
+    padding-bottom: 0px; }
+  footer a {
+    text-decoration: none;
+    color: #499dde; }
